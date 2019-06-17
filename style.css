@@ -1,0 +1,253 @@
+/* TEXT STYLES  */
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+h2{
+    font-family: 'Source Code Pro', monospace;
+}
+.quote{
+    font-style: italic;
+}
+
+/*   SECTION STYLES   */
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pimg1 {
+    background-image: url(img1.jpg);
+    min-height: 100%;
+}
+#small_header{
+    min-height: 400px;
+}
+.pimg2 {
+    background-image: url(img2.jpg);
+    min-height: 70%;
+}
+.pimg3 {
+    background-image: url(img3.jpg);
+    min-height: 70%;
+}
+.section {
+    text-align: center;
+    padding: 20px 80px;
+}
+.section-light {
+    background-color: #cde5f3;
+    color: #00192e;
+}
+span a {
+    text-decoration: none;
+    color: inherit;
+}
+span a:hover{
+    color: #fff;
+}
+/*Alternative colour option  #2d4b5e*/
+
+/* Not currently used
+.section-dark {
+    background-color: #75ccfff1;
+    color: #00192e;
+}  */
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    padding: 0;
+}
+.ptext .border {
+    background-color:	#00192e;
+    color: #cde5f3;
+    padding: 20px;
+}
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+
+/*  REACTIVITY  */
+@media(max-width:568px) {
+
+    .pimg1,
+    .pimg2,
+    .ping3 {
+        background-attachment: scroll;
+    }
+}
+
+
+/* NAV BAR STYLING  */
+
+nav {
+    background-color: 	#2a586f;
+    display: block;
+    padding: 0;
+    opacity: 1.00;
+    z-index: 2;
+}
+nav ul {
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    font-size: 20px;  
+}
+nav ul li {
+    display: inline-block;  
+}  
+nav ul li a {
+        color: white;
+        display: inline-block;
+        padding: 20px 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+    }
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: rgb(61, 183, 240);
+
+}
+#menu.docked {  
+     width: 100%;
+     display: inline-block;
+    }
+/*
+  @import "compass/css3"; */
+
+
+
+/*  ABOUT ME PAGE STYLING */
+
+  main{
+      background-color: #cde5f3;
+  }
+.page-title{
+    padding: 20px;
+}
+
+
+/*   CARD STYLING  */
+.centered {
+    margin: 0 auto;
+    padding: 3em 10em;
+}
+
+
+  .card {
+	background: white;
+	margin-bottom: 2em;	
+}
+
+.card a {
+	color: black;
+	text-decoration: none;
+}
+
+.card a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.card-content {
+	padding: 1.4em;
+}
+
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: normal;
+}
+
+.card-content p {
+	font-size: 95%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+
+}
+.thumbnail{
+    padding: 0;
+    margin: 1em;
+    border: 1px;
+    border-color: #2a586f;
+    border-style: solid;
+}
+
+/* Flexbox styles */
+@media screen and (min-width: 40em) {  
+    .cards {
+      margin-top: -1em;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      margin-bottom: 1em;
+      display: flex;
+      flex: 0 1 calc(50% - 0.5em);
+      /* width: calc(50% - 1em); */
+    }
+  } /* mq 40em*/
+  
+  @media screen and (min-width: 60em) {
+    .cards {
+      margin-top: inherit;
+    }
+    
+    .card {
+      margin-bottom: 2em;
+      display: flex;
+      flex: 0 1 calc(33% - 0.5em);
+      /* width: calc(33% - 1em); */
+    }
+  } /* mq 60em*/
+
+.card-heading{
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+
+.icons{
+width: 40%; 
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 0.5em;
+padding-top: 2em;
+}
+
+.move_icons{
+    position: absolute;
+    bottom: 0;
+}
+
+a .test-move{
+    position: relative;
+}
